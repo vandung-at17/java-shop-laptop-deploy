@@ -151,7 +151,7 @@
 	<build>
 		<plugins>
 			<!-- mvn clean compile assembly:single -->
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
@@ -165,9 +165,8 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
-			<plugin>
-
+			</plugin> -->
+			<!-- <plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<configuration>
 					<source>1.6</source>
@@ -192,7 +191,7 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin> -->
 			<!-- <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
