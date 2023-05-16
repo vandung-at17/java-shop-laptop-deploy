@@ -8,7 +8,7 @@
 	<packaging>jar</packaging>
 	<version>1.0</version>
 	<name>com.devpro.shop Maven Webapp</name>
-	<url>http://maven.apache.org</url>
+	<!-- <url>http://maven.apache.org</url> -->
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -173,7 +173,7 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin> -->
+			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
@@ -186,7 +186,7 @@
 					</excludes>
 				</configuration>
 			</plugin>
-			<!-- <plugin>
+			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<configuration>
 					<source>1.6</source>
