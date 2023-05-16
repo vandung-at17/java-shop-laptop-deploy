@@ -40,6 +40,11 @@
 			<!-- <exclusions> <exclusion> <groupId>org.springframework.boot</groupId> 
 				<artifactId>spring-boot-starter-logging</artifactId> </exclusion> </exclusions> -->
 		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -80,10 +85,7 @@
 			<artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-		</dependency>
+		
 
 		<!-- <dependency> <groupId>org.postgresql</groupId> <artifactId>postgresql</artifactId> 
 			<scope>runtime</scope> </dependency> -->
@@ -97,6 +99,7 @@
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
+			<version>${gson.version}</version>
 		</dependency>
 
 		<dependency>
@@ -156,7 +159,7 @@
 	<build>
 		<plugins>
 			<!-- mvn clean compile assembly:single -->
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
@@ -170,7 +173,7 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin> -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
@@ -183,7 +186,7 @@
 					</excludes>
 				</configuration>
 			</plugin>
-			<plugin>
+			<!-- <plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<configuration>
 					<source>1.6</source>
@@ -208,17 +211,17 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
-			<!-- <plugin>
+			</plugin> -->
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.0</version>
-				<version>2.3</version>
+				<!-- <version>3.8.0</version> -->
+				<version>3.6.1</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
 				</configuration>
-			</plugin> -->
+			</plugin>
 		</plugins>
 		<finalName>com.devpro.shop</finalName>
 	</build>
