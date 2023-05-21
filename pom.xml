@@ -5,10 +5,10 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.devpro</groupId>
 	<artifactId>com.devpro.shop</artifactId>
-	<packaging>jar</packaging>
+	<!-- <packaging>jar</packaging> -->
 	<version>1.0</version>
 	<name>com.devpro.shop Maven Webapp</name>
-	<!-- <url>http://maven.apache.org</url> -->
+	<url>http://maven.apache.org</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -24,7 +24,7 @@
 		<version>2.1.4.RELEASE</version>
 	</parent>
 	<dependencies>
-	
+
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -150,7 +150,7 @@
 	<build>
 		<plugins>
 			<!-- mvn clean compile assembly:single -->
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
@@ -211,8 +211,22 @@
 					<source>1.8</source>
 					<target>1.8</target>
 				</configuration>
+			</plugin> -->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<fork>true</fork>
+					<mainClass>${start-class}</mainClass>
+					<excludes>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+					</excludes>
+				</configuration>
 			</plugin>
 		</plugins>
-		<!-- <finalName>com.devpro.shop</finalName> -->
+		<finalName>com.devpro.shop</finalName>
 	</build>
 </project>
