@@ -26,6 +26,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<dependencies>
+	
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -38,8 +39,11 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			<!-- <exclusions> <exclusion> <groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-logging</artifactId> </exclusion> </exclusions> -->
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
 
 		<dependency>
@@ -82,14 +86,6 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-		</dependency>
-
-		<!-- <dependency> <groupId>org.postgresql</groupId> <artifactId>postgresql</artifactId>
-			<scope>runtime</scope> </dependency> -->
-
-		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
@@ -98,6 +94,7 @@
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
+			<version>${gson.version}</version>
 		</dependency>
 
 		<dependency>
@@ -106,14 +103,12 @@
 			<version>2.4</version>
 		</dependency>
 
-
-		<!-- springboot - security -->
+		<!-- Spring Boot - Security -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 
-		<!-- Spring Security -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-web</artifactId>
@@ -150,9 +145,8 @@
 			<artifactId>spring-security-jpa-auditing</artifactId>
 			<version>2.0.0</version>
 		</dependency>
-
+		
 	</dependencies>
-
 
 	<build>
 		<plugins>
@@ -170,49 +164,16 @@
 						</exclude>
 					</excludes>
 				</configuration>
-<!--				<executions>-->
-<!--					<execution>-->
-<!--						<goals>-->
-<!--							<goal>repackage</goal>-->
-<!--						</goals>-->
-<!--					</execution>-->
-<!--				</executions>-->
 			</plugin>
-<!--			<plugin>-->
-<!--				<artifactId>maven-assembly-plugin</artifactId>-->
-<!--				<configuration>-->
-<!--					<source>1.6</source>-->
-<!--					<target>1.6</target>-->
-<!--					<encoding>UTF-8</encoding>-->
-<!--					<archive>-->
-<!--						<manifest>-->
-<!--							<addClasspath>true</addClasspath>-->
-<!--							<mainClass>com.devpro.StartWebServer</mainClass>-->
-<!--						</manifest>-->
-<!--					</archive>-->
-<!--					<descriptorRefs>-->
-<!--						<descriptorRef>jar-with-dependencies</descriptorRef>-->
-<!--					</descriptorRefs>-->
-<!--				</configuration>-->
-<!--				<executions>-->
-<!--					<execution>-->
-<!--						<id>assemble-all</id>-->
-<!--						<phase>package</phase>-->
-<!--						<goals>-->
-<!--							<goal>single</goal>-->
-<!--						</goals>-->
-<!--					</execution>-->
-<!--				</executions>-->
-<!--			</plugin>-->
-<!--			<plugin>-->
-<!--				<groupId>org.apache.maven.plugins</groupId>-->
-<!--				<artifactId>maven-compiler-plugin</artifactId>-->
-<!--&lt;!&ndash;				<version>3.8.1</version>&ndash;&gt;-->
-<!--				<configuration>-->
-<!--					<source>${java.version}</source>-->
-<!--					<target>${java.version}</target>-->
-<!--				</configuration>-->
-<!--			</plugin>-->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.6.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
 		</plugins>
 		<finalName>com.devpro.shop</finalName>
 	</build>
