@@ -27,6 +27,9 @@ public class JPAConf {
         dataSourceConfig.setJdbcUrl("jdbc:mysql://root:oqFPTwOuE4ZCtFttH8QY@containers.railway.app:7904/railway");
         dataSourceConfig.setUsername("root");
         dataSourceConfig.setPassword("oqFPTwOuE4ZCtFttH8QY");
+//        dataSourceConfig.setJdbcUrl("jdbc:mysql://localhost:3306/shopjava");
+//        dataSourceConfig.setUsername("root");
+//        dataSourceConfig.setPassword("02050707");
         return new HikariDataSource(dataSourceConfig);
     }
 	

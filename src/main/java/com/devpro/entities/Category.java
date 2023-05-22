@@ -17,7 +17,7 @@ public class Category extends BaseEntity {
 	@Column(name = "name", length = 45, nullable = false)
 	private String name;
 
-	@Column(name = "description", length = 45, nullable = false)
+	@Column(name = "description", length = 255, nullable = false)
 	private String description;
 
 	// 1 category -> N products

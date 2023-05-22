@@ -18,10 +18,6 @@
 <title>Tạo Sản Phẩm Mới</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-
-
-
-
 <link href="${base}/css/users/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet">
 <script src="${base}/css/users/bootstrap/js/jquery-3.5.1.min.js"></script>
@@ -32,8 +28,13 @@
 <script src="${base}/ckeditor/ckeditor.js"></script>
 <!-- <script src="https://cdn.ckeditor.com/ckeditor5/37.0.1/classic/ckeditor.js"></script> -->
 <script src="${base}/ckeditor/config.js"></script>
-<link rel="stylesheet" type="text/css"
-	href="${base}/css/admin/add-product.css">
+<link rel="stylesheet" type="text/css" href="${base}/css/admin/add-product.css">
+<style>
+.note-editable{
+	height: 600px;
+	overflow:scroll;
+}
+</style>
 </head>
 <body>
 	<div class="wrapper">

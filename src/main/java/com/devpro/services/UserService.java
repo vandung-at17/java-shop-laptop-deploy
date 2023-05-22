@@ -103,8 +103,10 @@ public class UserService {
 		try {
 			user.setPassword(GeneratePassword.GenerPass(user.getPassword()));
 			user.getRoles().add(findRoleById(2));
+			user.setCreatedDate(java.time.LocalDateTime.now());
 			user.setUpdatedDate(java.time.LocalDateTime.now());
 			user.setStatus(true);
+			user.setAvatar("avt-1.jpg");
 			userRepo.save(user);
 		} catch (Exception e) {
 			throw e;

@@ -11,10 +11,10 @@ import javax.persistence.Table;
 @Table(name = "tbl_products_images")
 public class ProductImages extends BaseEntity {
 
-	@Column(name = "title", length = 45, nullable = false)
+	@Column(name = "title", length = 300, nullable = false)
 	private String title;
 
-	@Column(name = "path", length = 200, nullable = false)
+	@Column(name = "path", length = 300, nullable = false)
 	private String path;
 
 	@ManyToOne(fetch = FetchType.EAGER)

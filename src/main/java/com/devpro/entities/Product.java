@@ -20,7 +20,7 @@ import javax.persistence.Transient;
 @Entity
 @Table(name = "tbl_products")
 public class Product extends BaseEntity {
-	@Column(name = "title", length = 500, nullable = false)
+	@Column(name = "title", length = 1000, nullable = false)
 	private String title;
 	
 	@Column(name = "price", precision = 13, scale = 2, nullable = false)
@@ -30,7 +30,7 @@ public class Product extends BaseEntity {
 	private String shortDes;
 
 	@Lob
-	@Column(name = "detail_description", length = 500, nullable = false, columnDefinition = "text")
+	@Column(name = "detail_description", length = 3500, nullable = false, columnDefinition = "text")
 	private String shortDetails;
 	
 	@Transient
