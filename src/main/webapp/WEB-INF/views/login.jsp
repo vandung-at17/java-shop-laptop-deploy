@@ -50,6 +50,9 @@
 								for="password">Mật khẩu*</label><br> <input type="password" name="password"
 								placeholder="Vui lòng nhập mật khẩu của bạn"><br> <a
 								href="#">Quên mật khẩu?</a>
+								<p>Demo tài khoản ADMIN</p>
+								<p>User: admin</p>
+								<p>Pass : 123456</p>
 						</div>
 						<div class="right" style="margin-left:450px;margin-top:-150px;">
 							<button class="btn btn-lg btn-primary btn-block" type="submit">ĐĂNG
